@@ -1,0 +1,45 @@
+
+git init	--para tornar um diretório local para controle de versão
+
+git clone	--clona um repositório Git Existente para um novo diretório (pasta) local 	
+
+git add . 	--adicionar arquivo modificado
+git commit -m	--grava alterações no repositório
+git pull	--"puxa" alterações do repositório remoto para o local (busca e mescla)
+git push	--"empurra" as alterações do repositório remoto para o local remoto
+
+
+git config --global user.name Thiago Schissel
+git config --global user.email thiagoaschissel@gmail.com 
+
+git config --global init.defaultBranch main
+git config --global inint.defaultBranch
+
+git remote -v	--se retornar origin apresenta os repositórios remotos conectados
+git remote add origin URL	--insirir um repositório 
+
+git clone URL --branch feature-1 --single-branch	--para clonar somente só uma branch
+
+git status --verificar status do diretorio local
+
+retorno "untracked" não rastreado anteriormente no diretório
+
+git log --ver hashs dos ultimos commits
+
+git commit --amend -m "mensagem" --muda nome mensagem no commit
+
+git reset --soft hashdocommit	--Os commits após o <hash> são desfeitos, mas as alterações desses commits continuam prontas para serem commitadas novamente.
+git reset --mixed hashdocommit  --Os commits após o <hash> são desfeitos, as mudanças permanecem nos arquivos, mas não estão mais preparadas (git add).
+git reset --hard hashdocommit  --Os commits após o <hash> são apagados, as mudanças nos arquivos também são descartadas — o código volta exatamente como estava no commit indicado.
+
+
+---------------------------------------------------------------------
+git init --inicia repositorio git local
+git clone --clona um repositório Git Existente para um novo diretório (pasta) local 
+git add .
+git commit -m 
+git remote -v	--se retornar origin apresenta os repositórios remotos conectados
+git remote add origin URL	--insirir um repositório
+git status --status dos arquivos
+git log --ver oque foi executado
+
