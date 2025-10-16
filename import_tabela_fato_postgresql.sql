@@ -23,7 +23,6 @@ FROM MV.registro_auditoria
 CREATE INDEX idx_bi_reg_auditoria_tz
 ON bi_registro_auditoria (tz_registro_auditoria);
 */
-lalala
 
 -- Script para ser executado em uma rotina (job)
 -- A operação de DELETE agora será muito mais rápida graças ao índice criado
